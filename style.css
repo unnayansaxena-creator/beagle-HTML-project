@@ -1,40 +1,84 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 40px;
-    color: #222;
+* {
+    box-sizing: border-box;
 }
 
-section {
-    margin-bottom: 40px;
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.35;
+    color: #222;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 15px 25px 30px;
+    border: 1px solid #ccc;
+}
+
+.blog-box {
+    border: 2px solid #aaa;
+    padding: 15px 20px 20px;
+    margin-bottom: 16px;
 }
 
 h1 {
-    font-size: 40px;
-    margin-bottom: 20px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 26px;
+    margin: 0 0 10px;
 }
 
 h2 {
-    font-size: 28px;
+    font-size: 25px;
+    margin: 16px 0 20px;
 }
 
 p {
-    font-size: 18px;
-    line-height: 1.6;
+    margin-bottom: 18px;
 }
 
 a {
-    color: blue;
-    font-size: 18px;
+    color: #333;
+    text-decoration: underline;
 }
 
-.image-section img {
-    width: 500px;
+.images-section img {
+    display: block;
+    width: 65%;
     max-width: 100%;
     height: auto;
-    display: block;
+    margin: 0 0 12px;
 }
 
-ol {
-    font-size: 18px;
-    line-height: 2;
+.images-section p {
+    margin-bottom: 25px;
+}
+
+.trivia-section ol {
+    padding-left: 23px;
+}
+
+.trivia-section li {
+    margin-bottom: 7px;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 12px;
+    }
+
+    .blog-box {
+        padding: 12px;
+    }
+
+    .images-section img {
+        width: 100%;
+    }
 }
